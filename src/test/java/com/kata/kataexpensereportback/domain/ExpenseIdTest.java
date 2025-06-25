@@ -1,13 +1,11 @@
 package com.kata.kataexpensereportback.domain;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.mockito.Mockito.*;
 
-public class ExpenseIdTest {
+class ExpenseIdTest {
 
     @ParameterizedTest
     @ValueSource(ints = {-1, 0})
@@ -29,5 +27,4 @@ public class ExpenseIdTest {
         //THEN
         assertThat(expenseId.value()).isEqualTo(value);
     }
-
 }
