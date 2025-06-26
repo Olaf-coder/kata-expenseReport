@@ -11,5 +11,5 @@ public interface ExpensePortIn {
     Expense addExpense(Expense expense);
     List<Expense> getAllExpenses();
     List<Expense> filterExpense(Category category, LocalDate date);
-    BigDecimal getTotalExpensesByCategiry(Category category);
+    BigDecimal getTotalExpensesByCategory(Category category);
 }
